@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background:linear-gradient(#111,#222);
+    /* height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow-x: hidden;
+ }
+ ::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #111;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: linear-gradient(to right ,#EA4492   33%,#fb57a4 23% ,#fb57a4  70% ,#EA4492 66%,#EA4492 100% );
+    box-shadow: 0px 0px 2px #f951b3, inset 10px 8px 0px #ff7ec367;
+
+
+}
+ nav {
+     position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: rgb(255, 250, 250);
+    z-index: 20;
+ }
+ nav ul li {
+    display:inline-block;
+    margin-right: 10px;
+ }
+ nav ul {
+     margin-right: 100PX;
+ }
+ nav ul li a {
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     font-size: 24px;
+ }
+ nav ul li a:hover,.activ{
+     color: #EA4492;
+     font-weight: 500;
+ }
+.logo {
+    font-size: 70px;
+    margin-left: 100px;
+    color: rgb(252, 246, 246);
+}
+.contText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+}
+.contText h1 {
+    font-size: 50px;
+}
+/* #pos {
+    position: relative;
+    z-index: -1;
+} */
+.vi{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+}
+.lyer {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+   width: 100%;
+   height: 100%;
+   background-color:rgba(22, 21, 21, 0.657);
+}
+.dfu{
+    margin: 700px 0 100px 0;
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+
+}
+
+.dfu img {
+    width: 500px;
+    margin-left: 150px;
+    border-radius: 20px;
+    height: 450px;
+}
+.dfu p{
+    width: 600px;
+    margin-left: 75px;
+    color: rgba(241, 238, 238, 0.801);
+    padding: 20px;
+    background-color: rgba(228, 228, 228, 0.1);
+    border-radius: 10px;
+
+}
+.dfu img::after{
+    content: "";
+    width: 500px;
+    height: 700px;
+    background-color: rgba(236, 112, 11, 0.547);
+    position: absolute;
+}
+
+.q{
+    position: absolute;
+    width: 300px;
+    top: 70px;
+    left: 20px;
+    padding: 15px;
+    font-size: 32px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color:  rgba(222, 221, 221, 0.793);
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px rgba(56, 55, 55, 0.529);
+   
+    
+}
+.q::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    height: 7px;
+    top: -2px;
+    left: 0px;
+    background-image: linear-gradient(to right ,#db0b84  33%,#db0b84 33% ,#db0b84 66% ,#7A0BC0 66%,#7A0BC0 100% );
+}
+.dfu::after {
+    content: '';
+    background-color: #FA58B6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: circle(30% at right 60%);
+    z-index: -1;
+}
+
+.sectree{
+    margin-top: 200px !important;
+    }
+.row{
+    justify-content: center;
+}
+
+.title1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.secfour {
+    background-color: #5d3ea4;
+}
+.secfour img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.bor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bor p{
+    width: 800px;
+    margin-left: 40px;
+    background-color: #222;
+    padding:10px;
+    height: 100px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 20px;
+}
+/* ---------- */
+footer {
+    background-color: #5d3ea4;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+footer div {
+    font-size: 32px;
+}
+.card{
+    transition: 0.9s ease;
+    height: 500px;
+    box-shadow: 3px 3px 10px  rgba(111, 111, 111, 0.644);
+}
+.card:hover {
+    color: #403248;
+    transform: scale(1.04);
+    
+}
+.Arrow {
+    position:fixed;
+    background-color: #FA58B6;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    z-index: 100;
+    bottom: 10px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255) !important;
+}
+
+span {
+    color: #EA4492;
+}
+footer span{
+    color: rgb(210, 77, 0);
+}
